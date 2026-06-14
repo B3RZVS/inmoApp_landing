@@ -1,0 +1,113 @@
+/* ============================================
+   inmoApp Design Tokens
+   Premium Brokerage System — CSS Variables
+   ============================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
+
+:root {
+  /* ── Colors ── */
+  --color-primary: #000000;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #111c2e;
+  --color-on-primary-container: #7a849b;
+  --color-inverse-primary: #bcc7df;
+
+  --color-secondary: #565e74;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #d7dff9;
+  --color-on-secondary-container: #5a6278;
+
+  --color-surface: #f7f9fb;
+  --color-surface-dim: #d8dadc;
+  --color-surface-bright: #f7f9fb;
+  --color-surface-lowest: #ffffff;
+  --color-surface-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-high: #e6e8ea;
+  --color-surface-highest: #e0e3e5;
+  --color-surface-variant: #e0e3e5;
+
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #45474c;
+  --color-inverse-surface: #2d3133;
+  --color-inverse-on-surface: #eff1f3;
+
+  --color-outline: #75777d;
+  --color-outline-variant: #c5c6cd;
+
+  --color-background: #f7f9fb;
+  --color-on-background: #191c1e;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  /* Brand accent */
+  --color-accent: #0284c7;
+  --color-accent-subtle: rgba(2, 132, 199, 0.1);
+
+  /* Dark surfaces */
+  --color-dark-navy: #091426;
+  --color-dark-slate: #1e293b;
+  --color-dark-primary: #0f172a;
+
+  /* ── Typography ── */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  --text-display-lg: clamp(36px, 5vw, 48px);
+  --text-display-md: clamp(28px, 4vw, 36px);
+  --text-headline-lg: clamp(24px, 3.5vw, 32px);
+  --text-headline-md: clamp(20px, 2.5vw, 24px);
+  --text-headline-sm: 20px;
+  --text-body-lg: 18px;
+  --text-body-md: 16px;
+  --text-body-sm: 14px;
+  --text-label-lg: 14px;
+  --text-label-md: 12px;
+  --text-label-sm: 11px;
+
+  --leading-display: 1.15;
+  --leading-headline: 1.25;
+  --leading-body: 1.6;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.04em;
+  --tracking-widest: 0.12em;
+
+  /* ── Spacing ── */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+
+  --gutter: 24px;
+  --margin-desktop: 48px;
+  --margin-mobile: 16px;
+  --max-width: 1280px;
+  --sidebar-width: 280px;
+
+  /* ── Radius ── */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-card:
+    0 1px 3px rgba(9, 20, 38, 0.08), 0 1px 2px rgba(9, 20, 38, 0.05);
+  --shadow-lifted: 0 12px 32px rgba(9, 20, 38, 0.1);
+
+  /* ── Transitions ── */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 200ms;
+  --duration-base: 300ms;
+  --duration-slow: 600ms;
+}

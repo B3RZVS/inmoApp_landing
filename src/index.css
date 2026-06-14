@@ -1,0 +1,136 @@
+/* ============================================
+   inmoApp — Global Styles & Reset
+   ============================================ */
+
+@import "./App.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body-md);
+  line-height: var(--leading-body);
+  color: var(--color-on-background);
+  background-color: var(--color-background);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ── Visibility utilities ── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Scroll reveal animations ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity var(--duration-slow) var(--ease-out-expo),
+    transform var(--duration-slow) var(--ease-out-expo);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity var(--duration-slow) var(--ease-out-expo),
+    transform var(--duration-slow) var(--ease-out-expo);
+}
+.stagger.is-visible > *:nth-child(1) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.05s;
+}
+.stagger.is-visible > *:nth-child(2) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.13s;
+}
+.stagger.is-visible > *:nth-child(3) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.21s;
+}
+.stagger.is-visible > *:nth-child(4) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.29s;
+}
+.stagger.is-visible > *:nth-child(5) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.37s;
+}
+.stagger.is-visible > *:nth-child(6) {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.45s;
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

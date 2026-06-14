@@ -1,0 +1,14 @@
+.label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--text-label-sm);
+  font-weight: 700;
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+}
+
+.light {
+  color: rgba(255, 255, 255, 0.55);
+}

@@ -1,0 +1,85 @@
+/* ── Button.module.css ── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: 12px var(--space-xl);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-body);
+  font-size: var(--text-label-lg);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+  transition:
+    opacity var(--duration-fast) ease,
+    transform var(--duration-fast) ease,
+    background-color var(--duration-fast) ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Variants */
+.primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.primary:hover {
+  opacity: 0.85;
+}
+
+.outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+}
+.outline:hover {
+  background: var(--color-surface-container);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--color-on-surface-variant);
+}
+.ghost:hover {
+  color: var(--color-primary);
+}
+
+.white {
+  background: #ffffff;
+  color: var(--color-primary);
+}
+.white:hover {
+  background: var(--color-surface-variant);
+}
+
+.whiteOutline {
+  background: transparent;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+}
+.whiteOutline:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Sizes */
+.sm {
+  padding: 8px var(--space-md);
+  font-size: var(--text-label-md);
+}
+.lg {
+  padding: 16px var(--space-xl);
+  font-size: var(--text-body-md);
+}

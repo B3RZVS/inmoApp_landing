@@ -1,0 +1,113 @@
+.footer {
+  background: var(--color-dark-navy);
+  color: #ffffff;
+  padding: var(--space-2xl) 0 var(--space-xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--margin-desktop);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: var(--space-2xl);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  font-size: var(--text-body-sm);
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.7;
+  max-width: 260px;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.groupLabel {
+  font-size: var(--text-label-sm);
+  font-weight: 700;
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: var(--space-xs);
+}
+
+.link {
+  font-size: var(--text-body-sm);
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color var(--duration-fast) ease;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+.bottom {
+  max-width: var(--max-width);
+  margin: var(--space-2xl) auto 0;
+  padding: var(--space-lg) var(--margin-desktop) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.copyright {
+  font-size: var(--text-body-sm);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.legal {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.legalLink {
+  font-size: var(--text-body-sm);
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  transition: color var(--duration-fast) ease;
+}
+
+.legalLink:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 var(--margin-mobile);
+    gap: var(--space-xl);
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+  }
+
+  .bottom {
+    padding: var(--space-lg) var(--margin-mobile) 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
