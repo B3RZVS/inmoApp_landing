@@ -1,10 +1,219 @@
 <!doctype html>
-<html lang="en">
+<html lang="es-AR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>inmoapp-lading-principal</title>
+
+    <!-- ── Primary SEO ── -->
+    <title>
+      inmoApp | Gestión de Alquileres para Corredores Inmobiliarios en Argentina
+    </title>
+    <meta
+      name="description"
+      content="El sistema todo-en-uno para corredores inmobiliarios que arrancan en Argentina. Automatizá aumentos por ICL/IPC, generá liquidaciones y manejá tu cartera desde un solo lugar."
+    />
+    <meta
+      name="keywords"
+      content="software inmobiliario Argentina, gestión alquileres corredor, aumentos automáticos ICL IPC, liquidaciones inmobiliarias, CRM inmobiliario Argentina, inmoApp"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <link rel="canonical" href="https://inmoapp.ar/" />
+
+    <!-- ── Open Graph ── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="inmoApp" />
+    <meta property="og:url" content="https://inmoapp.ar/" />
+    <meta
+      property="og:title"
+      content="inmoApp — Arrancá tu corredor con las herramientas correctas"
+    />
+    <meta
+      property="og:description"
+      content="Contratos, pagos, aumentos automáticos y liquidaciones. Todo lo que necesita un corredor inmobiliario en Argentina desde el día uno."
+    />
+    <meta property="og:image" content="https://inmoapp.ar/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="inmoApp — sistema de gestión inmobiliaria para Argentina"
+    />
+    <meta property="og:locale" content="es_AR" />
+
+    <!-- ── Twitter Card ── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@inmoapp" />
+    <meta
+      name="twitter:title"
+      content="inmoApp — Arrancá tu corredor con las herramientas correctas"
+    />
+    <meta
+      name="twitter:description"
+      content="Contratos, pagos, aumentos automáticos y liquidaciones. Todo lo que necesita un corredor inmobiliario en Argentina desde el día uno."
+    />
+    <meta name="twitter:image" content="https://inmoapp.ar/og-image.jpg" />
+
+    <!-- ── Favicons ── -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#091426" />
+
+    <!-- ── Performance: preconnects ── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+    <!-- ── Fonts ── -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ── Material Symbols ── -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ── JSON-LD Structured Data ── -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://inmoapp.ar/#website",
+            "url": "https://inmoapp.ar/",
+            "name": "inmoApp",
+            "description": "Sistema de gestión todo-en-uno para corredores inmobiliarios en Argentina",
+            "inLanguage": "es-AR",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://inmoapp.ar/buscar?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://inmoapp.ar/#organization",
+            "name": "inmoApp",
+            "url": "https://inmoapp.ar/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://inmoapp.ar/logo.png",
+              "width": 200,
+              "height": 60
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "availableLanguage": "Spanish",
+              "areaServed": "AR"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Argentina"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://inmoapp.ar/#app",
+            "name": "inmoApp",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web, iOS, Android",
+            "url": "https://inmoapp.ar/",
+            "description": "Sistema de gestión todo-en-uno para corredores inmobiliarios en Argentina. Automatiza aumentos ICL/IPC, genera liquidaciones y administra contratos de alquiler.",
+            "inLanguage": "es-AR",
+            "publisher": {
+              "@id": "https://inmoapp.ar/#organization"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "ARS",
+              "availability": "https://schema.org/InStock",
+              "url": "https://inmoapp.ar/#precios"
+            },
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Corredores inmobiliarios",
+              "geographicArea": { "@type": "Country", "name": "Argentina" }
+            },
+            "featureList": [
+              "Aumentos automáticos ICL e IPC",
+              "Generación automática de pagos mensuales",
+              "Liquidaciones con un clic",
+              "Avisos de vencimientos de contratos",
+              "Mapa interactivo de inmuebles",
+              "Caja integrada",
+              "Catálogo de propiedades en venta",
+              "Gestión de contratos y clientes"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://inmoapp.ar/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Vale la pena si todavía tengo pocos contratos?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Empezar organizado es más fácil que ordenar el caos después. Con tu primer contrato ya tiene sentido. Los corredores que arrancan bien escalan más rápido."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Es un gasto más cuando recién arranco?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Un solo error en un aumento mal calculado o un contrato vencido sin renovar te cuesta más que la suscripción anual. inmoApp se paga solo."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Es difícil de usar?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Fue diseñado para el corredor que empieza, no para técnicos. Si sabés usar WhatsApp, podés usar inmoApp. Además, el onboarding es acompañado."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué pasa con mis datos actuales en Excel?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Te ayudamos a migrar tu información. No empezás de cero — llevás todo lo que ya tenés y desde ahí inmoApp toma el control."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Calcula aumentos por ICL e IPC?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí. El sistema aplica automáticamente el índice que corresponda según el contrato: ICL, IPC u otros que se definan por normativa."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Puedo cancelar cuando quiero?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí, podés cancelar en cualquier momento sin cargos ni compromisos. No te atamos a contratos largos."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
